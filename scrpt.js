@@ -35,7 +35,7 @@ const consequenciasCastelo = [
         alert(`Você tirou ${numeroSorteadoPersonagem}! Agora é a vez do inimigo!`)
         let numeroSorteadoInimigo = rolarDado()
         if(numeroSorteadoPersonagem > numeroSorteadoInimigo){
-            vidaInimigo -= 2
+            vidaInimigo -= 3
             alert(`O inimigo tirou ${numeroSorteadoInimigo}. Você acertou o inimigo com seu cuspi acido! Agora é vida dele é ${vidaInimigo}`)
         }
         else if(numeroSorteadoPersonagem < numeroSorteadoInimigo){
@@ -83,7 +83,7 @@ const consequenciasCastelo = [
             alert("Você venceu! Você encontrou um abrigo!")
         }
 }
- // Função para embriaguez medio
+ // Função para embriaguez medio mendigo
  function batalhaBarManMedia(){
     
     let vidaPersonagem = 11
@@ -112,7 +112,7 @@ const consequenciasCastelo = [
         alert("Você venceu! Se tornou o dono do bar e mudou de vida!")
     }
 }
-// Função para embreaguez alta
+// Função para embreaguez alta mendigo
 function batalhaBarManAlta(){
     
     let vidaPersonagem = 11
@@ -127,8 +127,19 @@ function batalhaBarManAlta(){
             alert(`A bebida tirou ${numeroSorteadoInimigo}. Você acertou ela! Agora o álcool dela é ${vidaInimigo}`)
         }
         else if(numeroSorteadoPersonagem < numeroSorteadoInimigo){
-            vidaPersonagem -= 2
-            alert(`A bebida tirou ${numeroSorteadoInimigo} e acertou você! Agora sua conciencia é ${vidaPersonagem}`)
+            if(vidaPersonagem < 5 && vidaInimigo > 7){
+                vidaPersonagem -= 4
+                alert(`A bebida tirou ${numeroSorteadoInimigo} e acertou você! Pegou em cheio hem? Agora sua conciencia é ${vidaPersonagem}`)
+                alert(`A música e a bebida entrou na sua cabeça... Você está chorando igual um bebê...`)
+            }
+            else if(vidaPersonagem > 7 && vidaInimigo < 5){
+                vidaPersonagem -= 1
+                alert(`A bebida tirou ${numeroSorteadoInimigo} e acertou você! Agora sua conciencia é ${vidaPersonagem}`)
+                alerta(`O álcool está mais leve que água!`)
+            }
+            else{
+                alert(`A bebida tirou ${numeroSorteadoInimigo} e acertou você! Pegou em cheio hem? Agora sua conciencia é ${vidaPersonagem}`)
+            }
         }
         else{
             alert("Empate! O show tem que continuar!")
@@ -141,7 +152,7 @@ function batalhaBarManAlta(){
         alert("Você venceu! Se tornou o dono do bar e mudou de vida!")
     }
 }
-//função para batalha com demonio alta
+//função para batalha com demonio alta mendigo
 function batalhaDemoManAlta(){
         
     let vidaPersonagem = 11
@@ -171,7 +182,7 @@ function batalhaDemoManAlta(){
         alert("Você venceu! Pode desfrutar do sabor da vitoria sabendo que agora você é rico!")
     }
 }
- // Função para batalha DEmo nível fácil
+ // Função para batalha DEmo nível fácil mendigo
  function batalhaDemoManFacil(){
     
     let vidaPersonagem = 11
@@ -200,6 +211,20 @@ function batalhaDemoManAlta(){
         alert("Você venceu! Pode desfrutar do sabor da vitoria sabendo que agora você é rico!")
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   // Função para batalha de nível fácil
   function batalhaFacil(){
     
@@ -211,7 +236,7 @@ function batalhaDemoManAlta(){
         alert(`Você tirou ${numeroSorteadoPersonagem}! Agora é a vez do inimigo!`)
         let numeroSorteadoInimigo = rolarDado()
         if(numeroSorteadoPersonagem > numeroSorteadoInimigo){
-            vidaInimigo -= 2
+            vidaInimigo -= 3
             alert(`O inimigo tirou ${numeroSorteadoInimigo}. Você acertou o inimigo! Agora é vida dele é ${vidaInimigo}`)
         }
         else if(numeroSorteadoPersonagem < numeroSorteadoInimigo){
@@ -303,8 +328,19 @@ function batalhaBarAlta(){
             alert(`A bebida tirou ${numeroSorteadoInimigo}. Você acertou ela! Agora o álcool dela é ${vidaInimigo}`)
         }
         else if(numeroSorteadoPersonagem < numeroSorteadoInimigo){
-            vidaPersonagem -= 2
-            alert(`A bebida tirou ${numeroSorteadoInimigo} e acertou você! Agora sua conciencia é ${vidaPersonagem}`)
+            if(vidaPersonagem < 5 && vidaInimigo > 7){
+                vidaPersonagem -= 4
+                alert(`A bebida tirou ${numeroSorteadoInimigo} e acertou você! Pegou em cheio hem? Agora sua conciencia é ${vidaPersonagem}`)
+                alert(`A música e a bebida entrou na sua cabeça... Você está chorando igual um bebê...`)
+            }
+            else if(vidaPersonagem > 7 && vidaInimigo < 5){
+                vidaPersonagem -= 1
+                alert(`A bebida tirou ${numeroSorteadoInimigo} e acertou você! Agora sua conciencia é ${vidaPersonagem}`)
+                alerta(`O álcool está mais leve que água!`)
+            }
+            else{
+                alert(`A bebida tirou ${numeroSorteadoInimigo} e acertou você! Pegou em cheio hem? Agora sua conciencia é ${vidaPersonagem}`)
+            }
         }
         else{
             alert("Empate! O show tem que continuar!")
@@ -376,7 +412,21 @@ function batalhaDemoAlta(){
         alert("Você venceu! Agora a história continua....")
     }
 }
-  // Função para batalha de nível fácil
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // Função para batalha de nível fácil Marcal
   function batalhaMarcalFacil(){
     
     let vidaPersonagem = 10
@@ -387,7 +437,7 @@ function batalhaDemoAlta(){
         alert(`Você tirou ${numeroSorteadoPersonagem}! Agora é a vez do inimigo!`)
         let numeroSorteadoInimigo = rolarDado()
         if(numeroSorteadoPersonagem > numeroSorteadoInimigo){
-            vidaInimigo -= 2
+            vidaInimigo -= 3
             alert(`O inimigo tirou ${numeroSorteadoInimigo}. Você acertou o inimigo com uma cadeirada! Agora é vida dele é ${vidaInimigo}`)
         }
         else if(numeroSorteadoPersonagem < numeroSorteadoInimigo){
@@ -405,7 +455,7 @@ function batalhaDemoAlta(){
         alert("Você venceu! Agora a história continua....")
     }
 }
-    // Função para batalha de nível médio
+    // Função para batalha de nível médio Marcal
     function batalhaMarcalMedia(){
         
         let vidaPersonagem = 10
@@ -435,7 +485,7 @@ function batalhaDemoAlta(){
             alert("Você venceu! Agora a história continua....")
         }
 }
- // Função para embriaguez medio
+ // Função para embriaguez medio Marcal
  function batalhaBarMarcalMedia(){
     
     let vidaPersonagem = 10
@@ -464,7 +514,7 @@ function batalhaDemoAlta(){
         alert("Você venceu! Saiu feliz e sobrio!")
     }
 }
-// Função para embreaguez alta
+// Função para embreaguez alta Marcal
 function batalhaBarMarcalAlta(){
     
     let vidaPersonagem = 10
@@ -479,9 +529,20 @@ function batalhaBarMarcalAlta(){
             alert(`A bebida tirou ${numeroSorteadoInimigo}. Você acertou ela com uma cadeirada! Agora o álcool dela é ${vidaInimigo}`)
         }
         else if(numeroSorteadoPersonagem < numeroSorteadoInimigo){
-            vidaPersonagem -= 2
-            alert(`A bebida tirou ${numeroSorteadoInimigo} e acertou você! Agora sua conciencia é ${vidaPersonagem}`)
-        }
+            if(vidaPersonagem < 5 && vidaInimigo > 7){
+                vidaPersonagem -= 4
+                alert(`A bebida tirou ${numeroSorteadoInimigo} e acertou você! Pegou em cheio hem? Agora sua conciencia é ${vidaPersonagem}`)
+                alert(`A música e a bebida entrou na sua cabeça... Você está chorando igual um bebê...`)
+            }
+            else if(vidaPersonagem > 7 && vidaInimigo < 5){
+                vidaPersonagem -= 1
+                alert(`A bebida tirou ${numeroSorteadoInimigo} e acertou você! Agora sua conciencia é ${vidaPersonagem}`)
+                alerta(`O álcool está mais leve que água!`)
+            }
+            else{
+                alert(`A bebida tirou ${numeroSorteadoInimigo} e acertou você! Pegou em cheio hem? Agora sua conciencia é ${vidaPersonagem}`)
+            }
+           }
         else{
             alert("Empate! O show tem que continuar!")
         }
@@ -493,7 +554,7 @@ function batalhaBarMarcalAlta(){
         alert("Você venceu! Saiu feliz e sobrio!")
     }
 }
-//função para batalha com demonio alta
+//função para batalha com demonio alta Marcal
 function batalhaDemoMarcalAlta(){
         
     let vidaPersonagem = 10
@@ -523,7 +584,7 @@ function batalhaDemoMarcalAlta(){
         alert("Você venceu! Pode desfrutar do sabor da vitoria")
     }
 }
- // Função para batalha DEmo nível fácil
+ // Função para batalha DEmo nível fácil Marcal
  function batalhaDemoMarcalFacil(){
     
     let vidaPersonagem = 10
@@ -534,7 +595,7 @@ function batalhaDemoMarcalAlta(){
         alert(`Você tirou ${numeroSorteadoPersonagem}! Agora é a vez do demônio!`)
         let numeroSorteadoInimigo = rolarDado()
         if(numeroSorteadoPersonagem > numeroSorteadoInimigo){
-            vidaInimigo -= 2
+            vidaInimigo -= 3
             alert(`O demônio tirou ${numeroSorteadoInimigo}. Você acertou o demônio com uma cadeirada! Agora é vida dele é ${vidaInimigo}`)
         }
         else if(numeroSorteadoPersonagem < numeroSorteadoInimigo){
@@ -552,6 +613,10 @@ function batalhaDemoMarcalAlta(){
         alert("Você venceu! Agora a história continua....")
     }
 }
+
+
+
+
 //************************************* Função que roda ao iniciar o jogo *************************************
 function iniciar(){
     const personagem = prompt(`Seja bem-vindo nobre aventurairo! Escolha uma das opções: 
